@@ -9,7 +9,7 @@
 
 <div class="flex justify-center items-center h-full">
 <div class="max-w-screen-xl w-full h-full">
-    <div class="flex space-x-0 space-y-4 lg:space-x-4 lg:space-y-0 flex-col lg:flex-row m-4 h-full">
+    <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 flex-col lg:flex-row m-2 lg:m-4 h-full">
         <div class="bg-card shadow-md rounded-sm p-2 flex flex-col w-full lg:w-96">
             <div class="flex justify-center items-center flex-col m-2">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
@@ -75,7 +75,7 @@
             </div>
            
         </div>
-        <div class="w-full flex flex-col space-y-4">
+        <div class="w-full flex flex-col space-y-2 lg:space-y-4">
             <Experiences titre="Experiences professionnelles">
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
