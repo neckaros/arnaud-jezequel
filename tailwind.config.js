@@ -46,6 +46,7 @@ const config = {
 				},
 				card: {
 					DEFAULT: "hsl(var(--card) / <alpha-value>)",
+					alt: "hsl(var(--card-alt) / <alpha-value>)",
 					foreground: "hsl(var(--card-foreground) / <alpha-value>)"
 				}
 			},

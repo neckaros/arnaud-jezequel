@@ -10,12 +10,12 @@
 <div class="flex justify-center items-center h-full">
 <div class="max-w-screen-xl w-full h-full">
     <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 flex-col lg:flex-row m-2 lg:m-4 h-full">
-        <div class="bg-card shadow-md rounded-sm p-2 flex flex-col w-full lg:w-96">
-            <div class="flex justify-center items-center flex-col m-2">
+        <div class="bg-card shadow-md rounded-sm flex flex-col w-full lg:w-96">
+            <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
                 <div class="pt-2 px-2 font-bold text-xl">Arnaud JEZEQUEL</div>
-                <div class="text-muted-foreground font-bold text-md">Responsable projet informatique</div>
-                <div class="flex  space-x-2 m-2">
+                <div class="py-2 text-muted-foreground font-bold text-md">Responsable projet informatique</div>
+                <div class="flex  space-x-2">
                     <Tooltip.Root>
                         <Tooltip.Trigger><a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a></Tooltip.Trigger>
                         <Tooltip.Content>
@@ -39,7 +39,7 @@
                     
                 </div>
                 <div class="flex flex-col w-full m-2">
-                    <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon</div></div>
+                    <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon, France</div></div>
                     <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985}</div></div>
                 </div>
                 <div>
@@ -48,24 +48,24 @@
            
 
 
-            <div class="flex flex-col m-2 space-y-2">
+            <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={100} name="Français" />
                 <SkillProgress value={90} name="Anglais" />
             </div>
 
-            <div class="flex flex-col m-2 space-y-2">
+            <div class="flex flex-col m-4 space-y-2">
                 <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Agilité, Agilité à l'echelle</div>
                 <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Management d'équipe</div>
             </div>
 
-            <div class="flex flex-col m-2 space-y-2">
+            <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={100} name="Excel" />
             </div>
 
             
         
 
-            <div class="flex flex-col m-2 space-y-2">
+            <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={90} name="Javascript/TS" />
                 <SkillProgress value={80} name="Rust" />
                 <SkillProgress value={70} name="Swift" />
@@ -73,7 +73,6 @@
                 <SkillProgress value={60} name="C#" />
                 <SkillProgress value={60} name="Dart/Flutter" />
             </div>
-           
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4">
             <Experiences titre="Experiences professionnelles">
@@ -124,5 +123,8 @@
 
         </div>
       </div>
+      
+<a href="https://github.com/neckaros/arnaud-jezequel" target="_blank" class="flex items-center justify-center m-2"><Github />Source</a>
 </div>
+
 </div>
