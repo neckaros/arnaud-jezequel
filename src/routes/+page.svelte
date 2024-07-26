@@ -56,6 +56,7 @@
             <div class="flex flex-col m-4 space-y-2">
                 <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Agilité, Agilité à l'echelle</div>
                 <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Management d'équipe</div>
+                <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Relations clients</div>
             </div>
 
             <div class="flex flex-col m-4 space-y-2">
