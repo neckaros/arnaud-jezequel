@@ -1,9 +1,10 @@
 <script lang="ts">
 	import Experience from "$lib/components/experience.svelte";
 	import Experiences from "$lib/components/experiences.svelte";
-import SkillProgress from "$lib/components/skill-progress.svelte";
+    import SkillProgress from "$lib/components/skill-progress.svelte";
     import { Progress } from "$lib/components/ui/progress";
-import { Github, Mail, Check, Link } from 'lucide-svelte';
+    import { Github, Mail, Check, Link, Phone } from 'lucide-svelte';
+    import * as Tooltip from "$lib/components/ui/tooltip";
   </script>
 
 <div class="flex justify-center items-center h-full">
@@ -15,9 +16,27 @@ import { Github, Mail, Check, Link } from 'lucide-svelte';
                 <div class="pt-2 px-2 font-bold text-xl">Arnaud JEZEQUEL</div>
                 <div class="text-muted-foreground font-bold text-md">Responsable projet informatique</div>
                 <div class="flex  space-x-2 m-2">
-                    <a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a>
+                    <Tooltip.Root>
+                        <Tooltip.Trigger><a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a></Tooltip.Trigger>
+                        <Tooltip.Content>
+                          <p>@neckaros</p>
+                        </Tooltip.Content>
+                    </Tooltip.Root>
+
+                    <Tooltip.Root>
+                        <Tooltip.Trigger><a href="mailto:arnaud.jezequel@gmail.com" class="hover:text-accent-foreground" target="_blank"><Mail /></a></Tooltip.Trigger>
+                        <Tooltip.Content>
+                          <p>arnaud.jezequel@gmail.com</p>
+                        </Tooltip.Content>
+                    </Tooltip.Root>
                     
-                    <a href="mailto:arnaud.jezequel@gmail.com" class="hover:text-accent-foreground" target="_blank"><Mail /></a>
+                    <Tooltip.Root>
+                        <Tooltip.Trigger><a href="tel:+33679790157" class="hover:text-accent-foreground" target="_blank"><Phone /></a></Tooltip.Trigger>
+                        <Tooltip.Content>
+                          <p>06 79 79 01 57</p>
+                        </Tooltip.Content>
+                    </Tooltip.Root>
+                    
                 </div>
                 <div class="flex flex-col w-full m-2">
                     <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon</div></div>
@@ -66,12 +85,16 @@ import { Github, Mail, Check, Link } from 'lucide-svelte';
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Méthodologie Agile</div>
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Suivi et néfociation des budgets</div>
                 </Experience>
-                <Experience titre="Responsable équipe projet FRTB" societe="Société Générale" debut="Mai 2018" fin="Mai 2021">
+                <Experience titre="Responsable équipe projet FRTB" societe="Société Générale" debut="Mai 2017" fin="Mai 2021">
                     <div class="text-justify">En réponse à une nouvelle réglementation de la Banque Centrale Européenne: refonte des métriques de risque de marché.</div>
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Équipe de 8 personnes</div>
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Méthodologie Agilité à l'echelle avec des P.I. (Program Increment: regroupement de plusieurs sprints avec gestion des interactions entre les équipes du programme)</div>
                 </Experience>
-                <Experience titre="Analyste fonctionnel" societe="Consultant MWA pour Société Générale"  debut="Mar 2010" fin="Mai 2013">
+                <Experience titre="Responsable catalogue" societe="Société Générale"  debut="Mai 2014" fin="Mai 2017">
+                    <div class="flex"><Check class="text-accent-foreground mr-2" />Un developpeur à Paris et 3 à Bangalore en Inde</div>
+                    <div class="flex"><Check class="text-accent-foreground mr-2" />Responsable des relations Paris/Inde</div>
+                </Experience>
+                <Experience titre="Analyste fonctionnel" societe="Consultant MWA pour Société Générale"  debut="Mar 2010" fin="Mai 2014">
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Receuille et étude des demandes du business</div>
                     <div class="flex"><Check class="text-accent-foreground mr-2" />Implémentation et cahier de test</div>
                 </Experience>
