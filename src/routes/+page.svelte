@@ -79,24 +79,24 @@
             <Experiences titre="Experiences professionnelles">
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
-                    <div class="text-justify">Refonte du système informatique pour les produits actions et leur dérivés pour la banque d'investissement de la Société Générale.<br/>Calcul en temps réel de l'exposition pour le trading et calcule des métriques officielles de risque et de pertes et profits pour les fonctions support.</div>
+                    <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Programme de 55 millions d'euros</div>
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Suivi de 6 streams avec des gestionnaire de projets</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Suivi de 6 streams avec des gestionnaires de projets</div>
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Méthodologie Agile</div>
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Suivi et néfociation des budgets</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Suivi et négociation des budgets</div>
                 </Experience>
                 <Experience titre="Responsable équipe projet FRTB" societe="Société Générale" debut="Mai 2017" fin="Mai 2021">
-                    <div class="text-justify">En réponse à une nouvelle réglementation de la Banque Centrale Européenne: refonte des métriques de risque de marché.</div>
+                    <div class="text-justify">En réponse à une nouvelle réglementation de la Banque Centrale Européenne: refonte des métriques des risques de marché.</div>
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Équipe de 8 personnes</div>
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Méthodologie Agilité à l'echelle avec des P.I. (Program Increment: regroupement de plusieurs sprints avec gestion des interactions entre les équipes du programme)</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Méthodologie Agilité à l'échelle avec des P.I. (Program Increment: regroupement de plusieurs sprints avec gestion des interactions entre les équipes du programme)</div>
                 </Experience>
                 <Experience titre="Responsable catalogue" societe="Société Générale"  debut="Mai 2014" fin="Mai 2017">
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Un developpeur à Paris et 3 à Bangalore en Inde</div>
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Responsable des relations Paris/Inde</div>
                 </Experience>
                 <Experience titre="Analyste fonctionnel" societe="Consultant MWA pour Société Générale"  debut="Mar 2010" fin="Mai 2014">
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Receuille et étude des demandes du business</div>
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Implémentation et cahier de test</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Recueil et étude des demandes du business</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Implémentation et cahier de tests</div>
                 </Experience>
                 
             </Experiences>
@@ -104,7 +104,7 @@
            
             <Experiences titre="Projets personnels">
                 <Experience titre="Redseat">
-                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Application web en svelte, Swift pour iOS et Kotlin pour Android TV</div>
+                    <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Application web en Svelte, Swift pour iOS et Kotlin pour Android TV</div>
                     <div class="flex"><Check class="min-w-6 text-accent-foreground mr-2" />Serveur en Rust</div>
                     <div class="flex"><Link class="min-w-6 text-accent-foreground mr-2" /><a href="https://www.redseat.cloud" target="_blank" class="underline">https://www.redseat.cloud</a></div>
                 </Experience>
@@ -116,7 +116,7 @@
             </Experiences>
 
             <Experiences titre="Études">
-                <Experience titre="Master Ecole de management spécialisation Finance" societe="KEDGE Business School - Marseille" fin="2010">
+                <Experience titre="Master Ecole de Management spécialisation Finance" societe="KEDGE Business School - Marseille" fin="2010">
                 </Experience>
                 <Experience titre="Bachelor of Arts Cross Cultural Management" societe="Leeds Metropolitan University - Angleterre" fin="2007">
                 </Experience>
