@@ -43,7 +43,7 @@
                 </div>
                 <div class="flex flex-col w-full m-2">
                     <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon, France</div></div>
-                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985}</div></div>
+                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985} ans</div></div>
                 </div>
                 <button class="absolute top-0 right-0 p-3" onclick={() => toggleMode()}>
                     {#if $mode === "dark"}
