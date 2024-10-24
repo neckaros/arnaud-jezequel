@@ -49,7 +49,7 @@
                 </div>
                 <div class="flex flex-col w-full m-2 print:hidden">
                     <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon, France</div></div>
-                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985}</div></div>
+                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985} ans</div></div>
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
                     <div class="flex space-x-2"><CircleUser /><span class="font-bold">{new Date().getFullYear() - 1985}ans,  Lyon</span></div>
