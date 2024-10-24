@@ -3,22 +3,22 @@
 	import Experiences from "$lib/components/experiences.svelte";
     import SkillProgress from "$lib/components/skill-progress.svelte";
     import { Progress } from "$lib/components/ui/progress";
-    import { Github, Mail, Check, Link, Phone, Sun, Moon } from 'lucide-svelte';
+    import { Github, Mail, PhoneCall, CircleUser, Phone, Sun, Moon, Printer } from 'lucide-svelte';
     import * as Tooltip from "$lib/components/ui/tooltip";
 	import { mode, toggleMode } from "mode-watcher";
 	import Point from "$lib/components/point.svelte";
 	import { PointType } from "../interfaces.ts/point-type";
   </script>
 
-<div class="flex justify-center items-center h-full">
+<div class="flex justify-center items-center h-full ">
 <div class="max-w-screen-xl w-full h-full">
-    <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 flex-col lg:flex-row m-2 lg:m-4 h-full">
-        <div class="bg-card shadow-md rounded-sm flex flex-col w-full lg:w-96">
-            <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4 relative">
+    <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 flex-col print:flex-row lg:flex-row m-2 lg:m-4 print:m-1 h-full print:space-x-1">
+        <div class="bg-card shadow-md rounded-sm print:shadow-transparent flex flex-col w-full lg:w-96 print:w-80 print:space-y-2">
+            <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4 relative ">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
                 <div class="pt-2 px-2 font-bold text-xl">Arnaud JEZEQUEL</div>
-                <div class="py-2 text-muted-foreground font-bold text-md">Responsable projet informatique</div>
-                <div class="flex  space-x-2">
+                <div class="py-2 text-muted-foreground font-bold text-md text-center">Responsable Projets informatiques</div>
+                <div class="flex  space-x-2 print:hidden">
                     <Tooltip.Root>
                         <Tooltip.Trigger><a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a></Tooltip.Trigger>
                         <Tooltip.Content>
@@ -39,13 +39,25 @@
                           <p>06 79 79 01 57</p>
                         </Tooltip.Content>
                     </Tooltip.Root>
+                    <Tooltip.Root>
+                        <Tooltip.Trigger><a href="javascript:if(window.print)window.print()" class="hover:text-accent-foreground"><Printer /></a></Tooltip.Trigger>
+                        <Tooltip.Content>
+                          <p>Print</p>
+                        </Tooltip.Content>
+                    </Tooltip.Root>
                     
                 </div>
-                <div class="flex flex-col w-full m-2">
+                <div class="flex flex-col w-full m-2 print:hidden">
                     <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon, France</div></div>
                     <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985}</div></div>
                 </div>
-                <button class="absolute top-0 right-0 p-3" onclick={() => toggleMode()}>
+                <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
+                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{new Date().getFullYear() - 1985}ans,  Lyon</span></div>
+                    <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
+                    <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
+                  <div class="flex space-x-2"><Github /><span class="font-bold">@neckaros</span></div>
+                </div>
+                <button class="absolute top-0 right-0 p-3 print:hidden" onclick={() => toggleMode()}>
                     {#if $mode === "dark"}
                     <Sun />
                     {:else}
@@ -83,7 +95,7 @@
                 <SkillProgress value={60} name="Dart/Flutter" />
             </div>
         </div>
-        <div class="w-full flex flex-col space-y-2 lg:space-y-4">
+        <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
             <Experiences titre="Experiences professionnelles">
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
@@ -106,7 +118,7 @@
                     <Point>Recueil et étude des demandes du business</Point>
                     <Point>Implémentation et cahier de tests</Point>
                 </Experience>
-                <Experience titre="Développeur excel" societe="Stagiaire chez Dexia, Luxembourg"  debut="Jan 2009" fin="Sept 2009">
+                <Experience titre="Développeur Excel/VBA" societe="Stagiaire chez Dexia, Luxembourg"  debut="Jan 2009" fin="Sept 2009">
                     <Point>Création d'un outil Excel en VBA de suivi des positions pour les gestionnaires de portefeuilles</Point>
                 </Experience>
             </Experiences>
@@ -139,7 +151,7 @@
         </div>
       </div>
       
-<a href="https://github.com/neckaros/arnaud-jezequel" target="_blank" class="flex items-center justify-center m-2 italic font-mono text-sm">Open source by Arnaud JEZEQUEL - Sources</a>
+<a href="https://github.com/neckaros/arnaud-jezequel" target="_blank" class="print:hidden flex items-center justify-center m-2 italic font-mono text-sm">Open source by Arnaud JEZEQUEL - Sources</a>
 </div>
 
 </div>

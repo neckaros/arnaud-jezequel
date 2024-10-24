@@ -5,9 +5,9 @@
     let { titre, children } = $props<{titre: string, children?: any}>();
 
 </script>
-<div class="bg-card shadow-md rounded-sm p-4 lg:p-4">
+<div class="bg-card shadow-md rounded-sm p-4 lg:p-4 print:p-2 print:break-inside-avoid-page">
     <div class="font-mono font-bold text-2xl text-accent-foreground">{titre}</div>
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4 print:space-y-2">
         {@render children()}
     </div>
     
