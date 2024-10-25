@@ -131,5 +131,9 @@
     body {
       -webkit-print-color-adjust:exact !important;
       print-color-adjust:exact !important;
+      zoom: 72%;
+    }
+    @page {
+      margin: 2mm 2mm 2mm 2mm; 
     }
   }

@@ -3,7 +3,7 @@
 	import Experiences from "$lib/components/experiences.svelte";
     import SkillProgress from "$lib/components/skill-progress.svelte";
     import { Progress } from "$lib/components/ui/progress";
-    import { Github, Mail, PhoneCall, CircleUser, Phone, Sun, Moon, Printer } from 'lucide-svelte';
+    import { Github, Mail, PhoneCall, CircleUser, Phone, Sun, Moon, Printer, Link } from 'lucide-svelte';
     import * as Tooltip from "$lib/components/ui/tooltip";
 	import { mode, toggleMode } from "mode-watcher";
 	import Point from "$lib/components/point.svelte";
@@ -12,7 +12,7 @@
 
 <div class="flex justify-center items-center h-full ">
 <div class="max-w-screen-xl w-full h-full">
-    <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 flex-col print:flex-row lg:flex-row m-2 lg:m-4 print:m-1 h-full print:space-x-1">
+    <div class="flex space-x-0 space-y-2 lg:space-x-4 lg:space-y-0 print:space-y-0 flex-col print:flex-row lg:flex-row m-2 lg:m-4 print:m-1 h-full print:space-x-1">
         <div class="bg-card shadow-md rounded-sm print:shadow-transparent flex flex-col w-full lg:w-96 print:w-80 print:space-y-2">
             <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4 relative ">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
@@ -53,6 +53,7 @@
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
                     <div class="flex space-x-2"><CircleUser /><span class="font-bold">{new Date().getFullYear() - 1985}ans,  Lyon</span></div>
+                    <div class="flex space-x-2"><Link /><span class="font-bold">arnaud.jezequel.org</span></div>
                     <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
                     <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
                   <div class="flex space-x-2"><Github /><span class="font-bold">@neckaros</span></div>
