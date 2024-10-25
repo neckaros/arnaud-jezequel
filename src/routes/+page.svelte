@@ -48,7 +48,15 @@
                     
                 </div>
                 <div class="flex flex-col w-full m-2 print:hidden">
-                    <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>Lyon, France</div></div>
+                    <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>
+                        <Tooltip.Root>
+                            <Tooltip.Trigger>Lyon, France</Tooltip.Trigger>
+                            <Tooltip.Content>
+                              <img src="/map.jpg" alt="Ouest lyonnais">
+                            </Tooltip.Content>
+                        </Tooltip.Root>
+                        
+                    </div></div>
                     <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{new Date().getFullYear() - 1985} ans</div></div>
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
