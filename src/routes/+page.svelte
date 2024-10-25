@@ -105,7 +105,7 @@
             </div>
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
-            <Experiences titre="Experiences professionnelles">
+            <Experiences titre={`Experiences professionnelles (${new Date().getFullYear() - 2009} ans)`}>
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
                     <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
