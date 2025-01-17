@@ -8,9 +8,9 @@
 </script>
 <div class="flex">
     {#if type === PointType.Link}
-        <Link class="min-w-6 text-accent-foreground mr-2" />
+        <Link class="min-w-6 text-accent-foreground mx-2" />
     {:else}
-        <Check class="min-w-6 text-accent-foreground mr-2" />
+        <Check class="min-w-6 text-accent-foreground mx-2" />
     {/if}
     {@render children()}
 </div>

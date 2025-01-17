@@ -7,7 +7,7 @@
     import * as Tooltip from "$lib/components/ui/tooltip";
 	import { mode, toggleMode } from "mode-watcher";
 	import Point from "$lib/components/point.svelte";
-	import { PointType } from "../interfaces.ts/point-type";
+	import { PointType } from "../../interfaces.ts/point-type";
 
     function calculateAge() { // birthday is a date
         const birthday = new Date('1985-05-31T00:00:00');
@@ -25,7 +25,7 @@
             <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4 relative ">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
                 <div class="pt-2 px-2 font-bold text-xl">Arnaud JEZEQUEL</div>
-                <div class="py-2 text-muted-foreground font-bold text-md text-center">Responsable Projets informatiques</div>
+                <div class="py-2 text-muted-foreground font-bold text-md text-center">IT Project Manager</div>
                 <div class="flex  space-x-2 print:hidden">
                     <Tooltip.Root>
                         <Tooltip.Trigger><a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a></Tooltip.Trigger>
@@ -56,7 +56,7 @@
                     
                 </div>
                 <div class="flex flex-col w-full m-2 print:hidden">
-                    <div class="flex"><div class="flex-1 font-bold">Ville:</div><div>
+                    <div class="flex"><div class="flex-1 font-bold">City:</div><div>
                         <Tooltip.Root>
                             <Tooltip.Trigger>Lyon, France</Tooltip.Trigger>
                             <Tooltip.Content>
@@ -65,11 +65,11 @@
                         </Tooltip.Root>
                         
                     </div></div>
-                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{calculateAge()} ans</div></div>
+                    <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{calculateAge()}</div></div>
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
-                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()}ans,  Lyon</span></div>
-                    <div class="flex space-x-2"><Link /><span class="font-bold">arnaud.jezequel.org</span></div>
+                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()} Years,  Lyon</span></div>
+                    <div class="flex space-x-2"><Link /><span class="font-bold">http://arnaud.jezequel.org/en</span></div>
                     <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
                     <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
                   <div class="flex space-x-2"><Github /><span class="font-bold">@neckaros</span></div>
@@ -86,22 +86,30 @@
 
 
             <div class="flex flex-col m-4 space-y-2">
-                <SkillProgress value={100} name="Français" />
-                <SkillProgress value={90} name="Anglais" />
+                <SkillProgress value={100} name="French" />
+                <SkillProgress value={90} name="English" />
             </div>
+            <br/>
 
             <div class="flex flex-col m-4 space-y-2">
-                <Point>Agilité, Agilité à l'echelle</Point>
-                <Point>Management d'équipe</Point>
-                <Point>Relations clients</Point>
+                <Point>Agility, Agility at scale</Point>
+                <Point>Team Management</Point>
+                <Point>Client relationships</Point>
             </div>
-
+            <br/>
+            <div class="flex flex-col m-4 space-y-2">
+                <SkillProgress value={70} name="Front risk" />
+                <SkillProgress value={90} name="Risk metrics" />
+                <SkillProgress value={80} name="Credit derivatives " />
+                <SkillProgress value={70} name="Equity derivatives" />
+            </div>
+            <br/>
             <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={100} name="Excel" />
             </div>
 
             
-        
+        <br/>
 
             <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={90} name="Javascript/TS" />
@@ -113,58 +121,64 @@
             </div>
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
-            <Experiences titre={`Experiences professionnelles (${new Date().getFullYear() - 2009} ans)`}>
-               
-                <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
-                    <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
-                    <Point>Programme de 55 millions d'euros</Point>
-                    <Point>Suivi de 6 streams avec des gestionnaires de projets</Point>
-                    <Point>Méthodologie Agile</Point>
-                    <Point>Suivi et négociation des budgets</Point>
+            <Experiences titre={`Professional Experiences (${new Date().getFullYear() - 2009} years)`}>
+    
+                <Experience titre="IT Program Director" societe="Société Générale, Paris" debut="May 2021" fin="Oct 2024">
+                    <div class="text-justify">Redesign of the worldwide IT system for equity products and their derivatives for Société Générale's investment banking.<br/>
+                        Real-time calculation of trading exposure and calculation of official risk metrics, and profit and loss for support functions.</div>
+                    <Point>55 million euros program</Point>
+                    <Point>Oversight of 6 streams with coordination between project managers and the business</Point>
+                    <Point>Agile methodology</Point>
+                    <Point>Budget monitoring and negotiation</Point>
                 </Experience>
-                <Experience titre="Responsable équipe projet FRTB" societe="Société Générale" debut="Mai 2017" fin="Mai 2021">
-                    <div class="text-justify">En réponse à une nouvelle réglementation de la Banque Centrale Européenne: refonte des métriques des risques de marché.</div>
-                    <Point>Équipe de 8 personnes</Point>
-                    <Point>Méthodologie Agilité à l'échelle avec des P.I. (Program Increment: regroupement de plusieurs sprints avec gestion des interactions entre les équipes du programme)</Point>
-                    <Point>Implémentation des métriques spécifiques FRTB et autres demandes du régulateur (EMIR, PRIIPS KID, MIFID...)</Point>
-                    
+            
+                <Experience titre="FRTB Project Team Leader" societe="Société Générale, Paris" debut="May 2017" fin="May 2021">
+                    <div class="text-justify">In response to new European Central Bank regulation: redesign of market risk metrics.</div>
+                    <Point>Work in agile with the business</Point>
+                    <Point>Implementation of FRTB Metrics plus other regulatory metrics (EMIR, PRIIPS KID, MIFID...)</Point>
+                    <Point>Team of 8 people</Point>
+                    <Point>Scaled Agile methodology with P.I. (Program Increment: grouping of multiple sprints with management of interactions between program teams)</Point>
                 </Experience>
-                <Experience titre="Responsable catalogue" societe="Société Générale"  debut="Mai 2014" fin="Mai 2017">
-                    <Point>Un developpeur à Paris et 3 à Bangalore en Inde</Point>
-                    <Point>Responsable des relations Paris/Inde</Point>
+            
+                <Experience titre="Risk Catalog Manager" societe="Société Générale, Paris" debut="May 2014" fin="May 2017">
+                    <Point>One developer in Paris and 3 in Bangalore, India</Point>
+                    <Point>Responsible for Paris/India relationships</Point>
                 </Experience>
-                <Experience titre="Analyste fonctionnel" societe="Consultant MWA pour Société Générale"  debut="Mar 2010" fin="Mai 2014">
-                    <Point>Recueil et étude des demandes du business</Point>
-                    <Point>Implémentation et cahier de tests</Point>
+            
+                <Experience titre="Functional Analyst" societe="MWA Consultant for Société Générale, Paris" debut="Mar 2010" fin="May 2014">
+                    <Point>Gathering and analysis of business requirements for credit derivatives</Point>
+                    <Point>Implementation and test documentation</Point>
                 </Experience>
-                <Experience titre="Développeur Excel/VBA" societe="Stagiaire chez Dexia, Luxembourg"  debut="Jan 2009" fin="Sept 2009">
-                    <Point>Création d'un outil Excel en VBA de suivi des positions pour les gestionnaires de portefeuilles</Point>
+            
+                <Experience titre="Excel/VBA Developer" societe="Intern at Dexia, Luxembourg" debut="Jan 2009" fin="Sept 2009">
+                    <Point>Creation of an Excel VBA tool for portfolio managers to track positions</Point>
                 </Experience>
+            
             </Experiences>
 
            
-            <Experiences titre="Projets personnels">
+            <Experiences titre="Personal projects">
                 <Experience titre="Redseat">
-                    <Point>Application web en Svelte, Swift pour iOS et Kotlin pour Android TV</Point>
-                    <Point>Serveur en Rust</Point>
+                    <Point>Web Svelte application, Swift pour iOS et Kotlin pour Android TV</Point>
+                    <Point>Server in Rust</Point>
                     <Point type={PointType.Link}><a href="https://www.redseat.cloud" target="_blank" class="underline hover:text-accent-foreground">https://www.redseat.cloud</a></Point>
                 </Experience>
                 <Experience titre="Flutter packages">
-                    <Point>500 Likes et 94% de popularité sur pub.dev</Point>
-                    <Point>+100 favoris sur Github</Point>
+                    <Point>500 Likes and 94% de popularity on pub.dev</Point>
+                    <Point>+100 favorites on Github</Point>
                     <Point type={PointType.Link}><a href="https://pub.dev/publishers/jezequel.org/packages" target="_blank" class="underline hover:text-accent-foreground">pub.dev/publishers/jezequel.org/packages</a></Point>
                 </Experience>
             </Experiences>
 
-            <Experiences titre="Études">
-                <Experience titre="Master Ecole de Management spécialisation Finance" societe="KEDGE Business School - Marseille" fin="2010">
+            <Experiences titre="Studies">
+                <Experience titre="Master Business School with specialization in Finance" societe="KEDGE Business School - Marseille" fin="2010">
                 </Experience>
-                <Experience titre="Bachelor of Arts Cross Cultural Management" societe="Leeds Metropolitan University - Angleterre" fin="2007">
+                <Experience titre="Bachelor of Arts Cross Cultural Management" societe="Leeds Metropolitan University - U.K." fin="2007">
                 </Experience>
             </Experiences>
 
             <Experiences titre="Hobbies">
-                Cinéma, Tennis, Football
+                Cinema, Tennis, Football
             </Experiences>
 
         </div>
