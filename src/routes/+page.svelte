@@ -117,25 +117,25 @@
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
                     <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
-                    <Point>Programme de 55 millions d'euros</Point>
+                    <Point>De l'idéation aux premières mises en production, en passant par l'étude de faisabilité technique et revue "frugale" du budget et des attendus</Point>
+                    <Point>Programme de 55 millions d'euros sur 8</Point>
                     <Point>Suivi de 6 streams avec des gestionnaires de projets</Point>
-                    <Point>Méthodologie Agile</Point>
+                    <Point>Management d'une équipe de 8 Développeurs et 4 Business analysts</Point>
+                    <Point>Méthodologie Agile à l'echelle</Point>
                     <Point>Suivi et négociation des budgets</Point>
                 </Experience>
                 <Experience titre="Responsable équipe projet FRTB" societe="Société Générale" debut="Mai 2017" fin="Mai 2021">
                     <div class="text-justify">En réponse à une nouvelle réglementation de la Banque Centrale Européenne: refonte des métriques des risques de marché.</div>
-                    <Point>Équipe de 8 personnes</Point>
+                    <Point>Équipe de 8 personnes (Développeurs et Business analysts)</Point>
                     <Point>Méthodologie Agilité à l'échelle avec des P.I. (Program Increment: regroupement de plusieurs sprints avec gestion des interactions entre les équipes du programme)</Point>
-                    <Point>Implémentation des métriques spécifiques FRTB et autres demandes du régulateur (EMIR, PRIIPS KID, MIFID...)</Point>
-                    
+                    <Point>Implémentation des métriques spécifiques FRTB et autres demandes du régulateur (EMIR, PRIIPS KID, MIFID...)</Point>  
                 </Experience>
                 <Experience titre="Responsable catalogue" societe="Société Générale"  debut="Mai 2014" fin="Mai 2017">
                     <Point>Un developpeur à Paris et 3 à Bangalore en Inde</Point>
                     <Point>Responsable des relations Paris/Inde</Point>
                 </Experience>
                 <Experience titre="Analyste fonctionnel" societe="Consultant MWA pour Société Générale"  debut="Mar 2010" fin="Mai 2014">
-                    <Point>Recueil et étude des demandes du business</Point>
-                    <Point>Implémentation et cahier de tests</Point>
+                    <Point>Recueil et étude des demandes du business, Implémentation et cahier de tests</Point>
                 </Experience>
                 <Experience titre="Développeur Excel/VBA" societe="Stagiaire chez Dexia, Luxembourg"  debut="Jan 2009" fin="Sept 2009">
                     <Point>Création d'un outil Excel en VBA de suivi des positions pour les gestionnaires de portefeuilles</Point>
@@ -150,8 +150,7 @@
                     <Point type={PointType.Link}><a href="https://www.redseat.cloud" target="_blank" class="underline hover:text-accent-foreground">https://www.redseat.cloud</a></Point>
                 </Experience>
                 <Experience titre="Flutter packages">
-                    <Point>500 Likes et 94% de popularité sur pub.dev</Point>
-                    <Point>+100 favoris sur Github</Point>
+                    <Point>500 Likes, 94% de popularité sur pub.dev et +100 favoris sur Github</Point>
                     <Point type={PointType.Link}><a href="https://pub.dev/publishers/jezequel.org/packages" target="_blank" class="underline hover:text-accent-foreground">pub.dev/publishers/jezequel.org/packages</a></Point>
                 </Experience>
             </Experiences>

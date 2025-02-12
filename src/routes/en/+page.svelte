@@ -126,9 +126,11 @@
                 <Experience titre="IT Program Director" societe="Société Générale, Paris" debut="May 2021" fin="Oct 2024">
                     <div class="text-justify">Redesign of the worldwide IT system for equity products and their derivatives for Société Générale's investment banking.<br/>
                         Real-time calculation of trading exposure and calculation of official risk metrics, and profit and loss for support functions.</div>
-                    <Point>55 million euros program</Point>
+                    <Point>From ideation to initial production runs, including technical feasibility studies and a 'frugal' review of the budget and expectations.</Point>
+                    <Point>55 million euros program over 8 years</Point>
                     <Point>Oversight of 6 streams with coordination between project managers and the business</Point>
-                    <Point>Agile methodology</Point>
+                    <Point>Management of a team of 8 Developers and 4 Business Analysts.</Point>
+                    <Point>Agile@Scale methodology</Point>
                     <Point>Budget monitoring and negotiation</Point>
                 </Experience>
             
@@ -146,8 +148,7 @@
                 </Experience>
             
                 <Experience titre="Functional Analyst" societe="MWA Consultant for Société Générale, Paris" debut="Mar 2010" fin="May 2014">
-                    <Point>Gathering and analysis of business requirements for credit derivatives</Point>
-                    <Point>Implementation and test documentation</Point>
+                    <Point>Gathering and analysis of business requirements, implementation and test documentation for credit derivatives</Point>
                 </Experience>
             
                 <Experience titre="Excel/VBA Developer" societe="Intern at Dexia, Luxembourg" debut="Jan 2009" fin="Sept 2009">
@@ -164,8 +165,7 @@
                     <Point type={PointType.Link}><a href="https://www.redseat.cloud" target="_blank" class="underline hover:text-accent-foreground">https://www.redseat.cloud</a></Point>
                 </Experience>
                 <Experience titre="Flutter packages">
-                    <Point>500 Likes and 94% de popularity on pub.dev</Point>
-                    <Point>+100 favorites on Github</Point>
+                    <Point>500 Likes, 94% de popularity on pub.dev and +100 favorites on Github</Point>
                     <Point type={PointType.Link}><a href="https://pub.dev/publishers/jezequel.org/packages" target="_blank" class="underline hover:text-accent-foreground">pub.dev/publishers/jezequel.org/packages</a></Point>
                 </Experience>
             </Experiences>
