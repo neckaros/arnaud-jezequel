@@ -68,7 +68,7 @@
                     <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{calculateAge()}</div></div>
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
-                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()} Years,  Lyon</span></div>
+                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()} years old,  Lyon</span></div>
                     <div class="flex space-x-2"><Link /><span class="font-bold">http://arnaud.jezequel.org/en</span></div>
                     <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
                     <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
