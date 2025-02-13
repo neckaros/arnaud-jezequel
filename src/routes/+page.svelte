@@ -68,7 +68,7 @@
                     <div class="flex"><div class="flex-1 font-bold">Age:</div><div>{calculateAge()} ans</div></div>
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
-                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()}ans,  Lyon</span></div>
+                    <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()} ans,  Lyon</span></div>
                     <div class="flex space-x-2"><Link /><span class="font-bold">arnaud.jezequel.org</span></div>
                     <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
                     <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
@@ -118,7 +118,7 @@
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
                     <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
                     <Point>De l'idéation aux premières mises en production, en passant par l'étude de faisabilité technique et revue "frugale" du budget et des attendus</Point>
-                    <Point>Programme de 55 millions d'euros sur 8</Point>
+                    <Point>Programme de 55 millions d'euros sur 8 ans</Point>
                     <Point>Suivi de 6 streams avec des gestionnaires de projets</Point>
                     <Point>Management d'une équipe de 8 Développeurs et 4 Business analysts</Point>
                     <Point>Méthodologie Agile à l'echelle</Point>
