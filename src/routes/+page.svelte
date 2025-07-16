@@ -25,7 +25,7 @@
             <div class="flex bg-card-alt rounded-t-sm justify-center items-center flex-col p-4 relative ">
                 <img src="/photo.jpg" class="rounded-full w-32" alt="Portrait"/>
                 <div class="pt-2 px-2 font-bold text-xl">Arnaud JEZEQUEL</div>
-                <div class="py-2 text-muted-foreground font-bold text-md text-center">Responsable Projets informatiques</div>
+                <div class="py-2 text-muted-foreground font-bold text-md text-center">Directeur de Programme IT / Chef de Projet Sénior</div>
                 <div class="flex  space-x-2 print:hidden">
                     <Tooltip.Root>
                         <Tooltip.Trigger><a href="https://www.github.com/neckaros" class="hover:text-accent-foreground" target="_blank"><Github /></a></Tooltip.Trigger>
@@ -116,7 +116,7 @@
             <Experiences titre={`Experiences professionnelles (${new Date().getFullYear() - 2009} ans)`}>
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
-                    <div class="text-justify">Refonte du système informatique pour les produits actions et leurs dérivés pour la banque d'investissement de la Société Générale.<br/>Calcule en temps réel de l'exposition pour le trading et calcule des métriques officielles de risques, et de pertes et profits pour les fonctions support.</div>
+                    <div class="text-justify">Refonte du système de calcul de risques (produits actions/dérivés). Pilotage d'un programme de 55M€ sur 8 ans. <br/>Management direct d'une équipe de 12 personnes (Développeurs, BA) et coordination de 6 streams projet..<br/>
                     <Point>De l'idéation aux premières mises en production, en passant par l'étude de faisabilité technique et revue "frugale" du budget et des attendus</Point>
                     <Point>Programme de 55 millions d'euros sur 8</Point>
                     <Point>Suivi de 6 streams avec des gestionnaires de projets</Point>
