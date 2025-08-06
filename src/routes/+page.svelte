@@ -69,10 +69,10 @@
                 </div>
                 <div class="hidden print:flex flex-col w-full space-y-2 text-sm">
                     <div class="flex space-x-2"><CircleUser /><span class="font-bold">{calculateAge()} ans,  Lyon</span></div>
-                    <div class="flex space-x-2"><Link /><span class="font-bold">arnaud.jezequel.org</span></div>
-                    <div class="flex space-x-2"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></div>
-                    <div class="flex space-x-2"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></div>
-                  <div class="flex space-x-2"><Github /><span class="font-bold">@neckaros</span></div>
+                    <a href="https://arnaud.jezequel.org" class="flex space-x-2" target="_blank"><Link /><span class="font-bold">arnaud.jezequel.org</span></a>
+                    <a href="mailto:arnaud.jezequel@gmail.com" class="flex space-x-2" target="_blank"><Mail /><span class="font-bold">arnaud.jezequel@gmail.com</span></a>
+                    <a href="tel:+33679790157" class="flex space-x-2" target="_blank"><PhoneCall /><span class="font-bold">+33 6 79 79 01 57</span></a>
+                  <a href="https://www.github.com/neckaros" class="flex space-x-2" target="_blank"><Github /><span class="font-bold">@neckaros</span></a>
                 </div>
                 <button class="absolute top-0 right-0 p-3 print:hidden" onclick={() => toggleMode()}>
                     {#if $mode === "dark"}

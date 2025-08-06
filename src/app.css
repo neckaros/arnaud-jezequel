@@ -136,4 +136,10 @@
     @page {
       margin: 2mm 2mm 2mm 2mm; 
     }
+
+    .fixshadowpdf {
+      -webkit-print-color-adjust: exact;
+      -webkit-filter: blur(0);
+    }
+
   }
