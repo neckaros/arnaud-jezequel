@@ -106,6 +106,7 @@
             <br/>
             <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={100} name="Excel" />
+				<SkillProgress value={80} name="LLM" />
             </div>
 
             
@@ -115,14 +116,26 @@
                 <SkillProgress value={90} name="Javascript/TS" />
                 <SkillProgress value={80} name="Rust" />
                 <SkillProgress value={70} name="Swift" />
+				<SkillProgress value={60} name="Python" />
                 <SkillProgress value={60} name="Java/Kotlin" />
                 <SkillProgress value={60} name="C#" />
                 <SkillProgress value={60} name="Dart/Flutter" />
+				<SkillProgress value={60} name="Databases (SQL, noSQl, VectorDB...)" />
             </div>
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
             <Experiences titre={`Professional Experiences (${new Date().getFullYear() - 2009} years)`}>
-    
+
+
+
+<Experience titre="AI Specialist" societe="via Flowful.ai" debut="July 2025" fin="">
+                    <div class="text-justify">Creation of chatbots and automation tools using LLM for private companies<br/>
+                    <Point>Creation of AI Agents to answear employees technical and commercial questions using compagny knowledge</Point>
+                    <Point>Help for xreztion of professional documents</Point>
+                    <Point>Using librechat, langchain (python), RAG embeddings (postgre, pinecone...), ChatGPT, Claude and Gemini</Point>
+                </Experience>
+
+
                 <Experience titre="IT Program Director" societe="Société Générale, Paris" debut="May 2021" fin="Oct 2024">
                     <div class="text-justify">Redesign of the worldwide IT system for equity products and their derivatives for Société Générale's investment banking.<br/>
                         Real-time calculation of trading exposure and calculation of official risk metrics, and profit and loss for support functions.</div>
