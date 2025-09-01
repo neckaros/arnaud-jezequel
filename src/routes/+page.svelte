@@ -120,10 +120,10 @@
 
                
                 <Experience titre="Consultant indépendant IA" societe="via Flowful.ai" debut="July 2025" fin="">
-                    <div class="text-justify">Creation de chatbot et d'automatisations pour les entreprises<br/>
-                    <Point>Creation d'agents pour répondre aux questions techniques et commerciales des employés</Point>
-                    <Point>Aide a la redaction de documents professionels</Point>
-                    <Point>Utilisation de librechat, langchain (python), RAG embeddings (postgre, pinecone...)</Point>
+                    <div class="text-justify">Création de chatbots et d'automatisations pour les entreprises<br/>
+                    <Point>Création d'agents pour répondre aux questions techniques et commerciales des employés</Point>
+                    <Point>Aide à la rédaction de documents professionnels</Point>
+                    <Point>Utilisation de LibreChat, LangChain (python), RAG embeddings (postgre, pinecone...)</Point>
 					<Point>Interfacafe avec des LLM (suivant le besoin: chatGPT, Claude, Gemini, DeepSeek...)</Point>
                 </Experience>
                
