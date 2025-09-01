@@ -107,6 +107,7 @@
                 <SkillProgress value={90} name="Javascript/TS" />
                 <SkillProgress value={80} name="Rust" />
                 <SkillProgress value={70} name="Swift" />
+				<SkillProgress value={60} name="Python" />
                 <SkillProgress value={60} name="Java/Kotlin" />
                 <SkillProgress value={60} name="C#" />
                 <SkillProgress value={60} name="Dart/Flutter" />
@@ -114,6 +115,14 @@
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
             <Experiences titre={`Experiences professionnelles (${new Date().getFullYear() - 2009} ans)`}>
+
+               
+                <Experience titre="Consultant indépendant IA" societe="via Flowful.ai" debut="July 2025" fin="">
+                    <div class="text-justify">Creation de chatbot et d'automatisations pour les entreprises<br/>
+                    <Point>Creation d'agents pour répondre aux questions techniques et commerciales des employés</Point>
+                    <Point>Aide a la redaction de documents professionels</Point>
+                    <Point>Utilisation de librechat, langchain (python), RAG embeddings (postgre, pinecone...)</Point>
+                </Experience>
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
                     <div class="text-justify">Refonte du système de calcul de risques (produits actions/dérivés). Pilotage d'un programme de 55M€ sur 8 ans. <br/>Management direct d'une équipe de 12 personnes (Développeurs, BA) et coordination de 6 streams projet..<br/>
