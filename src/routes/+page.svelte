@@ -98,6 +98,7 @@
 
             <div class="flex flex-col m-4 space-y-2">
                 <SkillProgress value={100} name="Excel" />
+				<SkillProgress value={70} name="LLM" />
             </div>
 
             
@@ -111,6 +112,7 @@
                 <SkillProgress value={60} name="Java/Kotlin" />
                 <SkillProgress value={60} name="C#" />
                 <SkillProgress value={60} name="Dart/Flutter" />
+				<SkillProgress value={60} name="Databases (SQL, noSQl, VectorDB...)" />
             </div>
         </div>
         <div class="w-full flex flex-col space-y-2 lg:space-y-4 print:space-y-1">
@@ -122,6 +124,7 @@
                     <Point>Creation d'agents pour répondre aux questions techniques et commerciales des employés</Point>
                     <Point>Aide a la redaction de documents professionels</Point>
                     <Point>Utilisation de librechat, langchain (python), RAG embeddings (postgre, pinecone...)</Point>
+					<Point>Interfacafe avec des LLM (suivant le besoin: chatGPT, Claud, Gemini, DeepSeek...)</Point>
                 </Experience>
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
