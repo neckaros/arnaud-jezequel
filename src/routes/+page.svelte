@@ -124,7 +124,7 @@
                     <Point>Creation d'agents pour répondre aux questions techniques et commerciales des employés</Point>
                     <Point>Aide a la redaction de documents professionels</Point>
                     <Point>Utilisation de librechat, langchain (python), RAG embeddings (postgre, pinecone...)</Point>
-					<Point>Interfacafe avec des LLM (suivant le besoin: chatGPT, Claud, Gemini, DeepSeek...)</Point>
+					<Point>Interfacafe avec des LLM (suivant le besoin: chatGPT, Claude, Gemini, DeepSeek...)</Point>
                 </Experience>
                
                 <Experience titre="Directeur de programme en informatique" societe="Société Générale" debut="Mai 2021" fin="Oct 2024">
