@@ -128,7 +128,7 @@
 
 
 
-<Experience titre="AI Specialist" societe="via Flowful.ai" debut="July 2025" fin="">
+<Experience titre="AI Specialist" societe="via Flowful.ai" debut="August 2025" fin="">
                     <div class="text-justify">Creation of chatbots and automation tools using LLM for private companies<br/>
                     <Point>Creation of AI Agents to answear employees technical and commercial questions using compagny knowledge</Point>
                     <Point>Help for xreztion of professional documents</Point>
