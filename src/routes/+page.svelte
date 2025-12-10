@@ -119,7 +119,7 @@
             <Experiences titre={`Experiences professionnelles (${new Date().getFullYear() - 2009} ans)`}>
 
                
-                <Experience titre="Consultant indépendant IA" societe="via Flowful.ai" debut="Août 2025" fin="">
+                <Experience titre="Co-founder - Ingénieur IA" societe="Flowful.ai" debut="Août 2025" fin="">
                     <div class="text-justify">Création de chatbots et d'automatisations pour les entreprises<br/>
                     <Point>Création d'agents pour répondre aux questions techniques et commerciales des employés</Point>
                     <Point>Aide à la rédaction de documents professionnels</Point>
